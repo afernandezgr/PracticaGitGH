@@ -7,7 +7,7 @@ git reset --hard HEAD~1
 ```
 
 Este comando deshace el último commit realizado y lo que había en el Working Copy lo deja como estaba antes de realizarlo. El Staging Area queda vacío.
-Mueve el puntero a HEAD -1 posición (commit justo anterior) y con el modificado hard provoca que se modique el working copy, sería equivalente a realizar un
+Mueve el puntero a HEAD -1 posición (commit justo anterior) y con el modificador hard provoca que se modique el working copy, sería equivalente a realizar un
 git reset HEAD~1  + git checkout -- 
 
 ##- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
@@ -30,7 +30,7 @@ Estando en la rama styled absorbemos a master.
 No causó conflicto, da el mensaje 'Already up to date'. No habría nada que fusionar al ir 'styled' por delante, con lo cual la incluye.
 
 ##- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué? 
-Si, da conflicto, los ficheros difieren del que hay en la rama styled del de la otra rama htmlify. Ante la duda git avisa del posible conflicto para que este lo resuelvo.
+Si, da conflicto, los ficheros difieren del que hay en la rama styled del de la otra rama htmlify. Ante la duda git avisa del posible conflicto para que este lo resuelvo usuario.
 
 ##- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué? 
 No ha causado conflicto. Hizo un fast-forward, una vez hemos resuelto los conflictos. La styled se encuentra por delante de las master, al hacer el merge lo que hacemos es mover el puntero de la rama 'master'
@@ -69,6 +69,7 @@ Para dejar el working copy con el fichero con los cambio correctamente fusionado
 
 ##- ¿Qué comando o comandos usaste en el paso 32?
 ```git reflog``` -> buscamos el primer commit cuando se creo por primera vez el poema
+
 ```git reset --hard f5adf89```
 El que aparece mas abajo del todo
 
